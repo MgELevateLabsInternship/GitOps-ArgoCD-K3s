@@ -31,7 +31,7 @@ Application deployments are synced automatically from a **GitHub repository → 
 └── README.md # Project documentation
 ```
 ---
-## GitOps Flow
+## 👨‍💻GitOps Flow
 ```
    👨‍💻 Developer
          │
@@ -163,12 +163,22 @@ kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.pas
 - Update deployment.yaml (e.g., change image tag nginx:1.27.1)
 - Commit & push → ArgoCD detects → Auto-deploys 🚀
 
+## ArgoCD Dashboard:
+
 <img width="1920" height="1020" alt="Applications Tiles - Argo CD - Brave 07-09-2025 14_59_56" src="https://github.com/user-attachments/assets/b31bb1e4-3355-4c45-8211-1b28b0a2c95b" />
+
+## myapp deployment: Syncing
+
 <img width="1920" height="1020" alt="Applications Tiles - Argo CD - Brave 07-09-2025 15_14_04" src="https://github.com/user-attachments/assets/7e360358-4860-454b-9cdb-aae4a3f1de75" />
-<img width="1920" height="1020" alt="Applications Tiles - Argo CD - Brave 07-09-2025 15_14_21" src="https://github.com/user-attachments/assets/3db72ecd-8b50-4eae-9d44-fc1a67c2658e" />
-<img width="1920" height="1020" alt="Applications Tiles - Argo CD - Brave 07-09-2025 15_14_31" src="https://github.com/user-attachments/assets/213c5da3-546f-4290-ad54-dc988ab36789" />
+
+## myapp deployment: Synced
+
 <img width="1920" height="1020" alt="Applications Tiles - Argo CD - Brave 07-09-2025 15_36_49" src="https://github.com/user-attachments/assets/751037ea-8051-4c90-ae94-35143605e814" />
+
 <img width="1920" height="1020" alt="Applications Tiles - Argo CD - Brave 07-09-2025 15_37_12" src="https://github.com/user-attachments/assets/646cbc6d-bb9b-4f59-a314-058356f56d75" />
+
+## Application:
+
 <img width="1920" height="1020" alt="Applications Tiles - Argo CD - Brave 07-09-2025 15_37_32" src="https://github.com/user-attachments/assets/139d08ca-c3de-4887-b076-1788a863e0fc" />
 
 
