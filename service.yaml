@@ -11,5 +11,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80          # Service port inside cluster
-      targetPort: 8080  # Container port from Deployment
+      targetPort: 80  # Container port from Deployment
       nodePort: 30080   # Fixed NodePort (must be between 30000–32767)
