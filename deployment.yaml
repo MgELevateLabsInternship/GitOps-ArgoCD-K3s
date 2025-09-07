@@ -13,9 +13,9 @@ spec:
     metadata:
       labels:
         app: myapp
-    spec:   # fixed (was specs)
-      containers:   # fixed (was container)
+    spec:
+      containers:
       - name: myapp
-        image: httpd:latest
+        image: nginx:latest   # changed from httpd → nginx
         ports:
-        - containerPort: 80   # httpd runs on 80 by default
+        - containerPort: 80   # nginx listens on 80
