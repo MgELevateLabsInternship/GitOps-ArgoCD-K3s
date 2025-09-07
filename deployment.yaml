@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: myapp
+  labels:
+    app: myapp
 spec:
   replicas: 2
   selector:
@@ -11,9 +13,9 @@ spec:
     metadata:
       labels:
         app: myapp
-    specs:
-      container:
+    spec:   # fixed (was specs)
+      containers:   # fixed (was container)
       - name: myapp
-        image: httpd
+        image: httpd:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 80   # httpd runs on 80 by default
